@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build simple-java-maven-app/Dockerfile .'
+        sh 'docker build -f simple-java-maven-app/Dockerfile .'
       }
     }
 
